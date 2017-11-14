@@ -1,6 +1,7 @@
 'use strict'
 
 function maxDivide(number, divisible) {
+  debugger
   while(number % divisible == 0) {
     number = number / divisible;
   }
@@ -8,6 +9,7 @@ function maxDivide(number, divisible) {
 }
 
 function isUgly(numberUgly) {
+  debugger
   numberUgly = maxDivide(numberUgly, 2);
   numberUgly = maxDivide(numberUgly, 3);
   numberUgly = maxDivide(numberUgly, 5);
@@ -16,6 +18,7 @@ function isUgly(numberUgly) {
 }
 
 function getUglyNo(input) {
+  debugger
   let i = 1;
   let countUglyNumber = 1; // ugly number count
 
@@ -25,7 +28,7 @@ function getUglyNo(input) {
       countUglyNumber++;
     }
   }
-    return i;    
+  return i;    
 }
 
 //driver code
