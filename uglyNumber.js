@@ -1,31 +1,40 @@
 'use strict'
 
 function maxDivides(number, divisible) {
+  // console.log("masuk maxDivides");
   while(number % divisible == 0) {
     number = number / divisible;
   }
-  return numbers;
+  return number;
 }
 
 function isUgly(numberUgly) {
-  numberUgly = maxDivide(numberUgly, 2);
-  numberUgly = maxDivide(numberUgly, 3);
-  numberUgly = maxDivide(numberUgly, 5);
+  // console.log("masuk maxDivides");
+  numberUgly = maxDivides(numberUgly, 2);
+  numberUgly = maxDivides(numberUgly, 3);
+  numberUgly = maxDivides(numberUgly, 5);
 
-  return (numbers = 1) ? true : false;
+  // return (numberUgly = 1) ? true : false;
+  // sama artinya seperti kode dibawah
+  if(numberUgly == 1) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function getUglyNo(input) {
   let i = 1;
-  let countUglyNumber == 1; // ugly number count
+  let countUglyNumber = 1; // ugly number count
 
   while(input > countUglyNumber) {
     i++;
     if(isUgly(i) == 1) {
-      counts++;
+      countUglyNumber++;
     }
-    return i;
+    // console.log(i)
   }
+  return i;
 }
 
 //driver code
