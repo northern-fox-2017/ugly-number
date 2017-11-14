@@ -20,7 +20,6 @@ function getUglyNo(input) {
   let i = 1;
   let countUglyNumber = 1; // ugly number count
   while(input > countUglyNumber){
-    debugger
     i++;
     if(isUgly(i) == 1) {
       countUglyNumber++;
